@@ -1,0 +1,76 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+G:/Shared\ drives/EE\ 371/Lab5/Lab5 {G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:13:29 on May 15,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Shared drives/EE 371/Lab5/Lab5" G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v 
+# -- Compiling module pt2_fir
+# -- Compiling module fir_test
+# 
+# Top level modules:
+# 	pt2_fir
+# 	fir_test
+# End time: 14:13:30 on May 15,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.fir_test
+# vsim work.fir_test 
+# Start time: 14:13:40 on May 15,2020
+# Loading work.fir_test
+vlog -vlog01compat -work work {+incdir+G:/Shared drives/EE 371/Lab5/Lab5} {G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:14:06 on May 15,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Shared drives/EE 371/Lab5/Lab5" G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v 
+# -- Compiling module pt2_fir
+# -- Compiling module fir_test
+# 
+# Top level modules:
+# 	fir_test
+# End time: 14:14:07 on May 15,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.fir_test
+# End time: 14:14:12 on May 15,2020, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 0
+# vsim work.fir_test 
+# Start time: 14:14:12 on May 15,2020
+# Loading work.fir_test
+# Loading work.pt2_fir
+# ** Error (suppressible): (vsim-3053) G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v(66): Illegal output or inout port connection for port 'Data_out'.
+#    Time: 0 ps  Iteration: 0  Instance: /fir_test/dut File: G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v
+# Error loading design
+# End time: 14:14:13 on May 15,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -vlog01compat -work work {+incdir+G:/Shared drives/EE 371/Lab5/Lab5} {G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:14:42 on May 15,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Shared drives/EE 371/Lab5/Lab5" G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v 
+# -- Compiling module pt2_fir
+# -- Compiling module fir_test
+# 
+# Top level modules:
+# 	fir_test
+# End time: 14:14:43 on May 15,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.fir_test
+# vsim work.fir_test 
+# Start time: 14:14:44 on May 15,2020
+# Loading work.fir_test
+# Loading work.pt2_fir
+add wave -position end  sim:/fir_test/clk
+add wave -position end  sim:/fir_test/rst
+add wave -position end  sim:/fir_test/Data_in
+add wave -position end  sim:/fir_test/Data_out
+run -all
+# ** Note: $stop    : G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v(95)
+#    Time: 430 ps  Iteration: 1  Instance: /fir_test
+# Break in Module fir_test at G:/Shared drives/EE 371/Lab5/Lab5/pt2_fir.v line 95

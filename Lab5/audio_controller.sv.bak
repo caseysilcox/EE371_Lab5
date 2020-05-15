@@ -1,0 +1,10 @@
+module audio_controller(clk, reset, read_ready, write_ready, read, write, readdata_left, readdata_right, 
+                        writedata_left, writedata_right);
+
+
+
+
+
+
+
+endmodule // audio_controller
